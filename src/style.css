@@ -6,12 +6,76 @@
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
 }
+.fashion-gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 180px;
+  gap: 5px;
+  margin-top: 10px;
+}
+.fashion-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.photo-1 {
+  grid-column: span 1;
+  grid-row: span 3;
+}
+.photo-2 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.photo-3 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.photo-4 {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+.photo-5 {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+.photo-6 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.photo-7 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.photo-8 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.photo-9 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.photo-10 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.photo-11 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.photo-12 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.photo-13 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
 body {
   margin-top: -50px;
   margin-left: -5px;
   margin-right: -5px;
 }
-
 header {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -31,7 +95,6 @@ header h1 {
   font-size: 65px;
   text-align: center;
 }
-
 header h2 {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
@@ -56,6 +119,13 @@ header a {
 a :hover {
   cursor: pointer;
 }
+section h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+}
 h3 {
   font-family: "Cormorant Garamond", serif;
   font-optical-sizing: auto;
@@ -72,7 +142,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(20%) contrast(90%);
-  padding: 20px 20px;
+  padding: 30px 100px;
 }
 footer h2 {
   font-family: "Bebas Neue", sans-serif;
@@ -83,14 +153,19 @@ footer h2 {
   opacity: 0.6;
 }
 footer h3 {
-  opacity: 0.6;
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  opacity: 0.7;
 }
 footer p {
-  opacity: 0.6;
+  opacity: 0.7;
 }
 footer ul {
   padding: 0;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 footer li {
   list-style: none;
@@ -106,7 +181,7 @@ footer a {
   font-size: 18px;
   text-decoration: none;
 }
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   header {
     margin-top: 50px;
   }
@@ -119,5 +194,29 @@ footer a {
   }
   header h2 {
     font-size: 15px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .fashion-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .fashion-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  footer h2 {
+    font-size: 18px;
+  }
+  footer a {
+    font-size: 14px;
+  }
+  footer p {
+    font-size: 14px;
   }
 }
