@@ -34,7 +34,6 @@
   object-fit: cover;
   display: block;
 }
-
 main h2 {
   padding-top: 20px;
   padding-left: 20px;
@@ -217,7 +216,6 @@ header a {
 a :hover {
   cursor: pointer;
 }
-
 footer {
   color: #efefef;
   background-image:
@@ -294,7 +292,6 @@ footer a {
     object-fit: contain;
     display: block;
   }
-
   footer h2 {
     font-size: 18px;
   }
