@@ -311,9 +311,11 @@ footer a {
   .grid-3-coloums {
     grid-template-columns: 1fr;
   }
-  .brand-container p{
+  .brand-container p {
     font-size: 15px;
-    line-height: 0.9;
+    line-height: 1;
   }
- 
+  .brand-container a {
+    font-size: 12px;
+  }
 }
